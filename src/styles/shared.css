@@ -29,6 +29,14 @@
   color: var(--text-faint);
 }
 
+.welcome-meta span,
+.teacher-banner-meta span,
+.app-footer-contact span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
 /* Avatar */
 .avatar {
   border-radius: 50%;
@@ -127,7 +135,8 @@
   gap: 12px;
 }
 .activity-icon {
-  font-size: 20px;
+  color: var(--purple-deep);
+  flex-shrink: 0;
 }
 .activity-title {
   font-size: 13.5px;

@@ -19,7 +19,8 @@
   margin-bottom: 28px;
 }
 .sidebar-logo-mark {
-  font-size: 22px;
+  display: flex;
+  color: var(--blue-deep);
 }
 
 .sidebar-section-label {

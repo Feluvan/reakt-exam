@@ -58,7 +58,7 @@
   background: #fbe3ee;
 }
 .mini-stat-emoji {
-  font-size: 18px;
+  color: var(--text);
   margin-bottom: 4px;
 }
 

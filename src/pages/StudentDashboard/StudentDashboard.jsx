@@ -31,15 +31,15 @@ export default function StudentDashboard() {
                 <h2>Welcome, {student.name}</h2>
                 <p>Here's a quick look at your progress, tasks and upcoming schedule this week.</p>
                 <div className="welcome-meta">
-                  <span>🎓 Grade 8</span>
-                  <span>✉️ mia.williams@schoolhub.edu</span>
+                  <span><Icon name="cap" size={14} /> Grade 8</span>
+                  <span><Icon name="mail" size={14} /> mia.williams@schoolhub.edu</span>
                 </div>
               </div>
             </div>
             <div className="student-stats-grid">
               {studentStats.map((s) => (
                 <div className={`mini-stat mini-stat--${s.color}`} key={s.label}>
-                  <span className="mini-stat-emoji">{s.icon}</span>
+                  <span className="mini-stat-emoji"><Icon name={s.icon} size={18} /></span>
                   <div className="stat-card-value">{s.value}</div>
                   <div className="stat-card-label">{s.label}</div>
                 </div>
@@ -90,7 +90,7 @@ export default function StudentDashboard() {
                   <div className="recent-group-label">{group.group}</div>
                   {group.items.map((it, i) => (
                     <div className="activity-item" key={i}>
-                      <span className="activity-icon">{it.icon}</span>
+                      <span className="activity-icon"><Icon name={it.icon} size={18} /></span>
                       <div>
                         <div className="activity-title">{it.title}</div>
                         <div className="activity-time">{it.time}</div>

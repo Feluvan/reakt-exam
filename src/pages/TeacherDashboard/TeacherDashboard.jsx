@@ -30,8 +30,8 @@ export default function TeacherDashboard() {
           <div className="card teacher-banner">
             <h2>{teacherBanner.title}</h2>
             <div className="teacher-banner-meta">
-              <span>✉️ {teacherBanner.email}</span>
-              <span>📞 {teacherBanner.phone}</span>
+              <span><Icon name="mail" size={14} /> {teacherBanner.email}</span>
+              <span><Icon name="phone" size={14} /> {teacherBanner.phone}</span>
             </div>
           </div>
 

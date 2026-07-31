@@ -95,7 +95,7 @@ export default function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
-        <span className="sidebar-logo-mark">🎓</span>
+        <span className="sidebar-logo-mark"><Icon name="cap" size={22} /></span>
         <span>SchoolHub</span>
       </div>
 

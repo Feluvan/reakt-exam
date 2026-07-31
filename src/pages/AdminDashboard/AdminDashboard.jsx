@@ -151,7 +151,7 @@ export default function AdminDashboard() {
           <div className="activity-list">
             {studentActivity.map((a, i) => (
               <div className="activity-item" key={i}>
-                <span className="activity-icon">{a.icon}</span>
+                <span className="activity-icon"><Icon name={a.icon} size={18} /></span>
                 <div>
                   <div className="activity-title">{a.title}</div>
                   <div className="activity-text">{a.text}</div>

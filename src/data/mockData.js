@@ -49,9 +49,9 @@ export const messagesAdmin = [
 ];
 
 export const studentActivity = [
-  { icon: '🏆', title: 'Regional Robotics Champion', text: 'Winning robots triumph in engineering challenge', time: '2 days ago' },
-  { icon: '🥇', title: 'Won Regional Debate Competition', text: "Debate team's compelling arguments reach national stage", time: '10 hours ago' },
-  { icon: '🥈', title: '2nd Place at Science State Fair', text: 'Science Club claims silver at science showcase', time: '3 weeks ago' },
+  { icon: 'ribbon', title: 'Regional Robotics Champion', text: 'Winning robots triumph in engineering challenge', time: '2 days ago' },
+  { icon: 'ribbon', title: 'Won Regional Debate Competition', text: "Debate team's compelling arguments reach national stage", time: '10 hours ago' },
+  { icon: 'ribbon', title: '2nd Place at Science State Fair', text: 'Science Club claims silver at science showcase', time: '3 weeks ago' },
 ];
 
 export const noticeBoard = [
@@ -151,10 +151,10 @@ export const expensesTable = [
 
 // ---------- STUDENT DASHBOARD ----------
 export const studentStats = [
-  { icon: '🎯', value: '97%', label: 'Attendance', color: 'blue' },
-  { icon: '📋', value: '258+', label: 'Task Completed', color: 'purple' },
-  { icon: '📝', value: '12', label: 'Task in Progress', color: 'yellow' },
-  { icon: '🏅', value: '245', label: 'Reward Points', color: 'pink' },
+  { icon: 'grid', value: '97%', label: 'Attendance', color: 'blue' },
+  { icon: 'notice', value: '258+', label: 'Task Completed', color: 'purple' },
+  { icon: 'edit', value: '12', label: 'Task in Progress', color: 'yellow' },
+  { icon: 'ribbon', value: '245', label: 'Reward Points', color: 'pink' },
 ];
 
 export const studentPerformance = { gpa: 3.4, max: 4.0, percent: 85, label: '1st Semester – 6th Semester' };
@@ -196,14 +196,14 @@ export const messagesStudent = [
 
 export const recentActivityStudent = [
   { group: 'Today', items: [
-    { icon: '📅', title: 'Reminder: Attending Physics Group Meeting.', time: '1:00 PM' },
-    { icon: '🎒', title: 'Reminder: Art Supplies Collection.', time: '10:30 AM' },
-    { icon: '🏅', title: 'You got Award for 1st place student', time: '10:30 AM' },
+    { icon: 'calendar', title: 'Reminder: Attending Physics Group Meeting.', time: '1:00 PM' },
+    { icon: 'calendar', title: 'Reminder: Art Supplies Collection.', time: '10:30 AM' },
+    { icon: 'ribbon', title: 'You got Award for 1st place student', time: '10:30 AM' },
   ]},
   { group: 'Yesterday', items: [
-    { icon: '🧪', title: 'Biology with Ms. Carter Quiz Scheduled', time: '4:00 PM' },
-    { icon: '👍', title: 'Received Feedback on English Essay.', time: '9:15 AM' },
-    { icon: '📤', title: 'Submitted Mathematics Assignment.', time: '2:45 PM' },
+    { icon: 'notice', title: 'Biology with Ms. Carter Quiz Scheduled', time: '4:00 PM' },
+    { icon: 'chat', title: 'Received Feedback on English Essay.', time: '9:15 AM' },
+    { icon: 'edit', title: 'Submitted Mathematics Assignment.', time: '2:45 PM' },
   ]},
 ];
 

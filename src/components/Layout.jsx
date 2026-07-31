@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Sidebar from './Sidebar.jsx';
 import Topbar from './Topbar.jsx';
+import Icon from './Icon.jsx';
 import { users } from '../data/mockData.js';
 import './Layout.css';
 
@@ -15,8 +16,8 @@ export default function Layout({ user = users.admin }) {
         </div>
         <footer className="app-footer">
           <div className="app-footer-contact">
-            <span>✉️ emailaddress@mail.com</span>
-            <span>📞 +1 234 5678</span>
+            <span><Icon name="mail" size={14} /> emailaddress@mail.com</span>
+            <span><Icon name="phone" size={14} /> +1 234 5678</span>
           </div>
           <div className="app-footer-links">
             <span>Terms of Use</span>
