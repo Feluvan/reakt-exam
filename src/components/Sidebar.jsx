@@ -18,7 +18,7 @@ const menu = [
   },
   { icon: 'notice', label: 'Notice', disabled: true },
   { icon: 'calendar', label: 'Calendar', disabled: true },
-  { icon: 'book', label: 'Library', disabled: true },
+  { icon: 'book', label: 'Library', to: '/library' },
   { icon: 'message', label: 'Message', disabled: true },
 ];
 

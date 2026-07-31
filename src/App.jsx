@@ -5,6 +5,7 @@ import Teachers from './pages/Teachers/Teachers.jsx';
 import Students from './pages/Students/Students.jsx';
 import Finance from './pages/Finance/Finance.jsx';
 import SchoolExpenses from './pages/SchoolExpenses/SchoolExpenses.jsx';
+import Library from './pages/Library/Library.jsx';
 import StudentDashboard from './pages/StudentDashboard/StudentDashboard.jsx';
 import TeacherDashboard from './pages/TeacherDashboard/TeacherDashboard.jsx';
 import { users } from './data/mockData.js';
@@ -21,6 +22,7 @@ function App() {
           <Route path="finance" element={<Navigate to="/finance/fees" replace />} />
           <Route path="finance/fees" element={<Finance />} />
           <Route path="finance/expenses" element={<SchoolExpenses />} />
+          <Route path="library" element={<Library />} />
         </Route>
 
         <Route element={<Layout user={users.student} />}>
