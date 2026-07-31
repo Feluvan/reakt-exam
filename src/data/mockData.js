@@ -122,17 +122,6 @@ export const feesTable = [
   { name: 'Emily Peterson', id: '2015-02-011', class: '10A', tuition: 4500, activities: 250, misc: 150, amount: 4900, status: 'Pending' },
 ];
 
-// ---------- LIBRARY ----------
-export const libraryBooks = [
-  { id: 'BK-001', title: 'To Kill a Mockingbird', author: 'Harper Lee', genre: 'Fiction', copies: 6, status: 'Available' },
-  { id: 'BK-002', title: 'A Brief History of Time', author: 'Stephen Hawking', genre: 'Science', copies: 3, status: 'Available' },
-  { id: 'BK-003', title: 'The Diary of a Young Girl', author: 'Anne Frank', genre: 'Biography', copies: 4, status: 'Borrowed' },
-  { id: 'BK-004', title: 'World History Atlas', author: 'Patrick K. O\'Brien', genre: 'History', copies: 5, status: 'Available' },
-  { id: 'BK-005', title: 'Algebra Fundamentals', author: 'Ron Larson', genre: 'Mathematics', copies: 8, status: 'Available' },
-  { id: 'BK-006', title: 'Charlotte\'s Web', author: 'E. B. White', genre: 'Fiction', copies: 2, status: 'Borrowed' },
-  { id: 'BK-007', title: 'The Elements', author: 'Theodore Gray', genre: 'Science', copies: 3, status: 'Available' },
-];
-
 // ---------- SCHOOL EXPENSES ----------
 export const expensesSummary = [
   { label: 'Total Expenses', value: '$98,200', trend: 'up', trendValue: '9%' },

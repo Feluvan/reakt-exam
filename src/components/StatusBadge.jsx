@@ -7,8 +7,6 @@ const map = {
   'Not Viewed': 'red',
   'In Progress': 'blue',
   'Not Started': 'red',
-  Available: 'blue',
-  Borrowed: 'yellow',
 };
 
 export default function StatusBadge({ status }) {
