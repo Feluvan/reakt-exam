@@ -1,0 +1,349 @@
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  padding: 22px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+.view-all-link {
+  font-size: 13px;
+  color: var(--blue-deep);
+  font-weight: 600;
+}
+
+.muted-icon {
+  color: var(--text-faint);
+}
+
+/* Avatar */
+.avatar {
+  border-radius: 50%;
+  background: var(--avatar-bg);
+  color: #6b7086;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Status badge */
+.status-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.status-badge--blue {
+  background: var(--blue-soft);
+  color: var(--blue-deep);
+}
+.status-badge--yellow {
+  background: var(--yellow-soft);
+  color: var(--yellow-deep);
+}
+.status-badge--red {
+  background: var(--red-soft);
+  color: var(--red);
+}
+.status-badge--purple {
+  background: var(--purple-soft);
+  color: var(--purple-deep);
+}
+
+/* Legend */
+.legend {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-soft);
+}
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Donut with side legend */
+.students-donut-wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.students-legend {
+  flex-direction: column;
+  gap: 14px;
+}
+.legend-value {
+  font-weight: 700;
+  color: var(--text);
+}
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.dot--blue {
+  background: var(--blue);
+}
+.dot--purple {
+  background: var(--purple);
+}
+
+/* Activity feed */
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.activity-item {
+  display: flex;
+  gap: 12px;
+}
+.activity-icon {
+  font-size: 20px;
+}
+.activity-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--text);
+}
+.activity-text {
+  font-size: 12.5px;
+  color: var(--text-soft);
+  margin: 2px 0;
+}
+.activity-time {
+  font-size: 11.5px;
+  color: var(--text-faint);
+}
+
+/* Recent activity feed */
+.recent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.recent-item {
+  display: flex;
+  gap: 10px;
+}
+.recent-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--purple);
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+.recent-text {
+  font-size: 13px;
+  color: var(--text-soft);
+  line-height: 1.4;
+}
+.recent-time {
+  font-size: 11.5px;
+  color: var(--text-faint);
+  margin-top: 2px;
+}
+
+/* Toolbar / search */
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-box svg {
+  position: absolute;
+  left: 14px;
+  color: var(--text-faint);
+}
+.search-box input {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 24px;
+  padding: 11px 16px 11px 40px;
+  font-size: 14px;
+  color: var(--text);
+  outline: none;
+}
+.search-box input::placeholder {
+  color: var(--text-faint);
+}
+
+.icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: var(--yellow);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.icon-btn--ghost {
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text-soft);
+}
+
+.select-pill {
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 20px;
+  padding: 8px 14px;
+  font-size: 13px;
+  color: var(--text-soft);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Page header (list pages) */
+.page-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.page-toolbar h1 {
+  font-size: 20px;
+  margin: 0;
+}
+.page-toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Table */
+.table-wrap {
+  overflow-x: auto;
+}
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+.data-table thead tr {
+  background: var(--blue-soft);
+}
+.data-table th {
+  text-align: left;
+  font-size: 13px;
+  color: var(--text-soft);
+  font-weight: 600;
+  padding: 14px 16px;
+  white-space: nowrap;
+}
+.data-table th:first-child {
+  border-radius: 10px 0 0 10px;
+}
+.data-table th:last-child {
+  border-radius: 0 10px 10px 0;
+}
+.data-table td {
+  padding: 14px 16px;
+  font-size: 13.5px;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+.data-table tr.is-selected td {
+  background: var(--purple-soft);
+}
+.cell-person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.cell-person-name {
+  font-weight: 600;
+  color: var(--text);
+}
+.cell-person-sub {
+  font-size: 12px;
+  color: var(--text-faint);
+}
+.row-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-faint);
+}
+.row-actions svg {
+  cursor: pointer;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.pagination-pages {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--text-soft);
+}
+.pagination-pages button {
+  min-width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  color: var(--text-soft);
+  font-size: 14px;
+}
+.pagination-pages button.active {
+  background: var(--purple-soft);
+  color: var(--purple-deep);
+  font-weight: 700;
+}
+.pagination-nav {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-soft);
+}

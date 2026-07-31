@@ -1,0 +1,13 @@
+.list-page .search-box {
+  width: 280px;
+}
+.list-page .search-box input {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+@media (max-width: 900px) {
+  .list-page .search-box {
+    width: 100%;
+  }
+}

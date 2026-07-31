@@ -1,0 +1,107 @@
+.welcome-row {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.welcome-card {
+  flex: 1.4;
+  background: var(--blue-soft);
+  display: flex;
+  align-items: center;
+}
+
+.welcome-text h2 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+.welcome-text p {
+  margin: 0 0 14px;
+  color: var(--text-soft);
+  font-size: 13.5px;
+  max-width: 480px;
+}
+
+.welcome-meta {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  color: var(--text-soft);
+  flex-wrap: wrap;
+}
+
+.student-stats-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.mini-stat {
+  border-radius: var(--radius);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.mini-stat--blue {
+  background: var(--blue-soft);
+}
+.mini-stat--purple {
+  background: var(--purple-soft);
+}
+.mini-stat--yellow {
+  background: var(--yellow-soft);
+}
+.mini-stat--pink {
+  background: #fbe3ee;
+}
+.mini-stat-emoji {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.performance-gauge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 6px;
+}
+.performance-value {
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.performance-value strong {
+  font-size: 26px;
+  color: var(--text);
+}
+.performance-value span {
+  font-size: 12px;
+  color: var(--text-faint);
+}
+.performance-label {
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--text-soft);
+}
+
+.recent-group-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-faint);
+  letter-spacing: 0.05em;
+  margin: 14px 0 10px;
+}
+.recent-group-label:first-child {
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .welcome-row {
+    flex-direction: column;
+  }
+}

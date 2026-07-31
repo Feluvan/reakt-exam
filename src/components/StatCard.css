@@ -1,0 +1,46 @@
+.stat-card {
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.stat-card--purple {
+  background: var(--purple-soft);
+}
+.stat-card--yellow {
+  background: var(--yellow-soft);
+}
+.stat-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.trend-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.trend-badge--up {
+  color: var(--green);
+}
+.trend-badge--down {
+  color: var(--red);
+}
+.stat-card-dots {
+  color: var(--text-faint);
+}
+.stat-card-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+}
+.stat-card-label {
+  font-size: 14px;
+  color: var(--text-soft);
+}

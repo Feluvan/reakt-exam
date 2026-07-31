@@ -1,0 +1,197 @@
+/* Donut */
+.donut-chart {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.donut-center {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.donut-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+}
+.donut-label {
+  font-size: 13px;
+  color: var(--text-faint);
+}
+
+/* Grouped bar chart */
+.bars-chart {
+  display: flex;
+  gap: 12px;
+}
+.bars-y-axis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-faint);
+  padding-bottom: 26px;
+}
+.bars-plot {
+  position: relative;
+  flex: 1;
+}
+.bars-grid {
+  position: absolute;
+  inset: 0;
+  bottom: 26px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+.bars-gridline {
+  border-top: 1px dashed var(--border);
+  height: 0;
+}
+.bars-columns {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.bars-column {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.bars-group {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 26px;
+}
+.bars-bar {
+  width: 10px;
+  border-radius: 5px 5px 0 0;
+  min-height: 2px;
+}
+.bars-cat-label {
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  color: var(--text-faint);
+}
+.bars-tooltip {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  background: #fff;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-card);
+  padding: 8px 12px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* Area / line chart */
+.area-chart {
+  display: flex;
+  gap: 12px;
+}
+.area-y-axis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-faint);
+  padding-bottom: 24px;
+}
+.area-plot {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.area-svg {
+  flex: 1;
+  width: 100%;
+  overflow: visible;
+}
+.area-gridline {
+  stroke: var(--border);
+  stroke-dasharray: 6 6;
+}
+.area-x-axis {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-faint);
+  padding-top: 8px;
+}
+.area-tooltip {
+  position: absolute;
+  top: 0;
+  bottom: 24px;
+  z-index: 2;
+  pointer-events: none;
+}
+.area-tooltip-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--border);
+}
+.area-tooltip-box {
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  background: #fff;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-card);
+  padding: 8px 12px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* Horizontal bar list */
+.hbar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.hbar-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.hbar-label {
+  width: 84px;
+  flex-shrink: 0;
+  font-size: 13px;
+  color: var(--text-soft);
+}
+.hbar-track {
+  flex: 1;
+  height: 20px;
+  background: var(--bg);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.hbar-fill {
+  height: 100%;
+  border-radius: 6px;
+}
+.hbar-axis {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--text-faint);
+  padding-left: 98px;
+  margin-top: 4px;
+}

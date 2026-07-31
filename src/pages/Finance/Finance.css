@@ -1,0 +1,52 @@
+.finance-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.finance-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.finance-chart-card {
+  min-width: 0;
+}
+
+.finance-summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.finance-summary-card {
+  background: var(--blue-soft);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.finance-summary-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sparkline {
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .finance-top {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .finance-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
