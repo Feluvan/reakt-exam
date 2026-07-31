@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { NavLink, Link, useLocation } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import Icon from './Icon.jsx';
 import './Sidebar.css';
 
@@ -28,36 +27,25 @@ const otherMenu = [
 ];
 
 export default function Sidebar() {
-  const location = useLocation();
-  const [financeOpen, setFinanceOpen] = useState(location.pathname.startsWith('/finance'));
-
   const renderItem = (item) => {
     if (item.children) {
-      const isOpen = financeOpen || location.pathname.startsWith('/finance');
       return (
         <div key={item.label} className="sidebar-group">
-          <button
-            type="button"
-            className={`sidebar-item sidebar-item--toggle${isOpen ? ' active' : ''}`}
-            onClick={() => setFinanceOpen((v) => !v)}
-          >
+          <div className="sidebar-item sidebar-item--label">
             <Icon name={item.icon} />
             <span>{item.label}</span>
-            <Icon name={isOpen ? 'chevronDown' : 'chevronRight'} size={14} className="sidebar-chevron" />
-          </button>
-          {isOpen && (
-            <div className="sidebar-submenu">
-              {item.children.map((child) => (
-                <NavLink
-                  key={child.to}
-                  to={child.to}
-                  className={({ isActive }) => `sidebar-subitem${isActive ? ' active' : ''}`}
-                >
-                  {child.label}
-                </NavLink>
-              ))}
-            </div>
-          )}
+          </div>
+          <div className="sidebar-submenu">
+            {item.children.map((child) => (
+              <NavLink
+                key={child.to}
+                to={child.to}
+                className={({ isActive }) => `sidebar-subitem${isActive ? ' active' : ''}`}
+              >
+                {child.label}
+              </NavLink>
+            ))}
+          </div>
         </div>
       );
     }

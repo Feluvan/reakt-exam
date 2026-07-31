@@ -66,19 +66,13 @@
   background: transparent;
 }
 
-.sidebar-item--toggle {
-  width: 100%;
-  border: none;
+.sidebar-item--label {
+  cursor: default;
+  font-weight: 600;
+  color: var(--text);
+}
+.sidebar-item--label:hover {
   background: transparent;
-  font-family: inherit;
-  text-align: left;
-  cursor: pointer;
-}
-.sidebar-item--toggle span {
-  flex: 1;
-}
-.sidebar-chevron {
-  color: var(--text-faint);
 }
 
 .sidebar-submenu {
