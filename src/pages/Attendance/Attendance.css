@@ -1,0 +1,31 @@
+.attendance-table th,
+.attendance-table td {
+  text-align: center;
+}
+.attendance-table th:first-child,
+.attendance-table td:first-child {
+  text-align: left;
+}
+.attendance-table {
+  min-width: 1100px;
+}
+
+.mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+.mark--present {
+  background: var(--blue);
+  color: #fff;
+}
+.mark--absent {
+  background: var(--red);
+  color: #fff;
+}
+.mark--none {
+  color: var(--text-faint);
+}

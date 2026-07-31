@@ -122,31 +122,44 @@ export const feesTable = [
   { name: 'Emily Peterson', id: '2015-02-011', class: '10A', tuition: 4500, activities: 250, misc: 150, amount: 4900, status: 'Pending' },
 ];
 
-// ---------- SCHOOL EXPENSES ----------
-export const expensesSummary = [
-  { label: 'Total Expenses', value: '$98,200', trend: 'up', trendValue: '9%' },
-  { label: 'Salaries', value: '$70,400', trend: 'up', trendValue: '4%' },
-  { label: 'Utilities & Maintenance', value: '$12,350', trend: 'up', trendValue: '12%' },
-  { label: 'Supplies & Others', value: '$15,450', trend: 'down', trendValue: '6%' },
+// ---------- ATTENDANCE ----------
+export const attendanceDays = [
+  { day: '08', weekend: false }, { day: '09', weekend: false }, { day: '10', weekend: false },
+  { day: '11', weekend: false }, { day: '12', weekend: false }, { day: '13', weekend: true },
+  { day: '14', weekend: true }, { day: '15', weekend: false }, { day: '16', weekend: false },
+  { day: '17', weekend: false }, { day: '18', weekend: false }, { day: '19', weekend: false },
+  { day: '20', weekend: true }, { day: '21', weekend: true },
 ];
 
-export const expensesChart = {
-  months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-  data: [78000, 79500, 80200, 81000, 85000, 83000, 76000, 74000, 92000, 95000, 98200, 90000],
-  highlight: { index: 10, date: 'Nov 8', value: '$98,200' },
-};
+const P = 'present';
+const A = 'absent';
+const W = null;
 
+export const attendanceRows = [
+  { name: 'Lucas Johnson', record: [P, A, P, P, P, W, W, P, A, P, P, P, W, W] },
+  { name: 'Emily Peterson', record: [P, P, P, P, P, W, W, P, P, A, P, P, W, W] },
+  { name: 'Michael Brown', record: [P, P, P, A, P, W, W, P, A, P, P, P, W, W] },
+  { name: 'Hannah White', record: [P, A, P, P, P, W, W, P, P, P, A, P, W, W] },
+  { name: 'Oliver Martinez', record: [P, P, P, P, P, W, W, P, P, P, P, P, W, W] },
+  { name: 'Isabella Garcia', record: [P, P, P, P, A, W, W, P, P, P, P, P, W, W] },
+  { name: 'Ethan Lee', record: [P, P, P, P, P, W, W, A, P, A, P, P, W, W] },
+  { name: 'Sophia Wilson', record: [A, P, P, P, P, W, W, P, P, P, P, P, W, W] },
+  { name: 'Aiden Taylor', record: [P, P, P, P, P, W, W, P, P, P, P, A, W, W] },
+  { name: 'Ava Smith', record: [P, P, A, P, P, W, W, P, A, P, P, P, W, W] },
+];
+
+// ---------- SCHOOL EXPENSES ----------
 export const expensesTable = [
-  { name: 'Teacher Salaries', id: 'EXP-001', category: 'Payroll', department: 'Administration', amount: 52000, date: 'Jul 1, 2026', status: 'Paid' },
-  { name: 'Support Staff Wages', id: 'EXP-002', category: 'Payroll', department: 'Administration', amount: 18400, date: 'Jul 1, 2026', status: 'Paid' },
-  { name: 'Electricity Bill', id: 'EXP-003', category: 'Utilities', department: 'Facilities', amount: 6200, date: 'Jul 5, 2026', status: 'Paid' },
-  { name: 'Water & Sanitation', id: 'EXP-004', category: 'Utilities', department: 'Facilities', amount: 1850, date: 'Jul 5, 2026', status: 'Paid' },
-  { name: 'Building Maintenance', id: 'EXP-005', category: 'Maintenance', department: 'Facilities', amount: 4300, date: 'Jul 10, 2026', status: 'Pending' },
-  { name: 'Classroom Supplies', id: 'EXP-006', category: 'Supplies', department: 'Academics', amount: 3150, date: 'Jul 12, 2026', status: 'Paid' },
-  { name: 'Library Books & Materials', id: 'EXP-007', category: 'Supplies', department: 'Library', amount: 2400, date: 'Jul 14, 2026', status: 'Pending' },
-  { name: 'Sports Equipment', id: 'EXP-008', category: 'Supplies', department: 'Athletics', amount: 1900, date: 'Jul 15, 2026', status: 'Overdue' },
-  { name: 'IT & Software Licenses', id: 'EXP-009', category: 'Technology', department: 'IT Dept', amount: 3600, date: 'Jul 18, 2026', status: 'Paid' },
-  { name: 'Transportation Fuel', id: 'EXP-010', category: 'Transport', department: 'Operations', amount: 2700, date: 'Jul 20, 2026', status: 'Paid' },
+  { id: 'EX01', category: 'Laboratory', expense: 'Chemicals', quantity: '100 units', amount: '$500', date: '04/10/2026' },
+  { id: 'EX02', category: 'Maintenance', expense: 'HVAC Repair', quantity: '1 service', amount: '$2000', date: '04/05/2026' },
+  { id: 'EX03', category: 'Boarding Equipment', expense: 'Bedding Sets', quantity: '50 sets', amount: '$2500', date: '04/15/2026' },
+  { id: 'EX04', category: 'Library', expense: 'Books Acquisition', quantity: '200 books', amount: '$3000', date: '04/20/2026' },
+  { id: 'EX05', category: 'Sports', expense: 'Basketball Gear', quantity: '30 items', amount: '$1500', date: '04/12/2026' },
+  { id: 'EX06', category: 'IT Infrastructure', expense: 'Computers Upgrade', quantity: '10 pcs', amount: '$10000', date: '04/25/2026' },
+  { id: 'EX07', category: 'Transportation', expense: 'Bus Maintenance', quantity: '3 buses', amount: '$4500', date: '04/08/2026' },
+  { id: 'EX08', category: 'Cafeteria', expense: 'Kitchen Equipment Upgrade', quantity: '5 items', amount: '$5000', date: '04/18/2026' },
+  { id: 'EX09', category: 'Arts & Crafts', expense: 'Supplies Purchase', quantity: '100 kits', amount: '$1000', date: '04/22/2026' },
+  { id: 'EX10', category: 'Maintenance', expense: 'Painting School Building', quantity: '1 service', amount: '$7000', date: '04/28/2026' },
 ];
 
 // ---------- STUDENT DASHBOARD ----------

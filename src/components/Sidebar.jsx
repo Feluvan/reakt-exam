@@ -6,7 +6,7 @@ const menu = [
   { icon: 'home', label: 'Dashboard', to: '/dashboard' },
   { icon: 'cap', label: 'Teachers', to: '/teachers' },
   { icon: 'users', label: 'Students', to: '/students' },
-  { icon: 'grid', label: 'Attendance', to: '/dashboard' },
+  { icon: 'grid', label: 'Attendance', to: '/attendance' },
   {
     icon: 'dollar',
     label: 'Finance',
@@ -56,15 +56,6 @@ export default function Sidebar() {
           <Icon name={item.icon} />
           <span>{item.label}</span>
         </div>
-      );
-    }
-
-    if (item.label === 'Attendance') {
-      return (
-        <Link key={item.label} to={item.to} className="sidebar-item">
-          <Icon name={item.icon} />
-          <span>{item.label}</span>
-        </Link>
       );
     }
 

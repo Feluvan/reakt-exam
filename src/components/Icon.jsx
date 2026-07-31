@@ -27,6 +27,8 @@ const paths = {
   arrowDown: 'M12 5v14M6 13l6 6 6-6',
   mail: 'M4 6h16v12H4zM4 7l8 6 8-6',
   phone: 'M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C11.4 21 3 12.6 3 3c0-.6.4-1 1-1h3.2c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z',
+  check: 'M5 13l4 4L19 7',
+  close: 'M6 6l12 12M18 6 6 18',
 };
 
 export default function Icon({ name, size = 20, strokeWidth = 1.8, className = '' }) {
