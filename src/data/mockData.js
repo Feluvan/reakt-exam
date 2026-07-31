@@ -95,33 +95,6 @@ export const studentsList = [
   { name: 'James Martinez', email: 'jmartinez@schoolhub.edu', id: '2018-01-010', class: '7B', dob: '12/12/2008', phone: '(555) 101-0110', address: '1010 Fir St, Springfield, IL' },
 ];
 
-// ---------- FINANCE / FEES COLLECTION ----------
-export const feesSummary = [
-  { label: 'Total Amount', value: '$126,450', trend: 'up', trendValue: '15%' },
-  { label: 'Total Tuition', value: '$67,200', trend: 'up', trendValue: '15%' },
-  { label: 'Total Activities', value: '$8,000', trend: 'down', trendValue: '8%' },
-  { label: 'Total Miscellaneous', value: '$6,150', trend: 'down', trendValue: '8%' },
-];
-
-export const feesChart = {
-  months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-  data: [45000, 52000, 68000, 85000, 100000, 90000, 115000, 152927, 130000, 60000, 118000, 165000],
-  highlight: { index: 7, date: 'Aug 19', value: '$152,927' },
-};
-
-export const feesTable = [
-  { name: 'Sophia Wilson', id: '2015-02-017', class: '11A', tuition: 4500, activities: 300, misc: 200, amount: 5000, status: 'Paid' },
-  { name: 'Ethan Lee', id: '2015-01-016', class: '10B', tuition: 4500, activities: 250, misc: 150, amount: 4900, status: 'Pending' },
-  { name: 'Michael Brown', id: '2015-03-012', class: '12 AP Calculus', tuition: 4800, activities: 300, misc: 200, amount: 5300, status: 'Paid' },
-  { name: 'Ava Smith', id: '2015-01-019', class: '9B', tuition: 4500, activities: 250, misc: 100, amount: 4850, status: 'Overdue' },
-  { name: 'Lucas Johnson', id: '2015-01-004', class: '11A', tuition: 4500, activities: 300, misc: 200, amount: 5000, status: 'Paid' },
-  { name: 'Isabella Garcia', id: '2015-03-015', class: '8B', tuition: 4200, activities: 200, misc: 150, amount: 4550, status: 'Pending' },
-  { name: 'Oliver Martinez', id: '2015-02-014', class: 'Drama Club', tuition: 4500, activities: 350, misc: 100, amount: 4950, status: 'Paid' },
-  { name: 'Hannah White', id: '2015-01-013', class: '7C', tuition: 4200, activities: 200, misc: 100, amount: 4500, status: 'Paid' },
-  { name: 'Aiden Taylor', id: '2015-03-018', class: 'Spanish I', tuition: 4200, activities: 250, misc: 150, amount: 4600, status: 'Overdue' },
-  { name: 'Emily Peterson', id: '2015-02-011', class: '10A', tuition: 4500, activities: 250, misc: 150, amount: 4900, status: 'Pending' },
-];
-
 // ---------- ATTENDANCE ----------
 export const attendanceDays = [
   { day: '08', weekend: false }, { day: '09', weekend: false }, { day: '10', weekend: false },
@@ -146,20 +119,6 @@ export const attendanceRows = [
   { name: 'Sophia Wilson', record: [A, P, P, P, P, W, W, P, P, P, P, P, W, W] },
   { name: 'Aiden Taylor', record: [P, P, P, P, P, W, W, P, P, P, P, A, W, W] },
   { name: 'Ava Smith', record: [P, P, A, P, P, W, W, P, A, P, P, P, W, W] },
-];
-
-// ---------- SCHOOL EXPENSES ----------
-export const expensesTable = [
-  { id: 'EX01', category: 'Laboratory', expense: 'Chemicals', quantity: '100 units', amount: '$500', date: '04/10/2026' },
-  { id: 'EX02', category: 'Maintenance', expense: 'HVAC Repair', quantity: '1 service', amount: '$2000', date: '04/05/2026' },
-  { id: 'EX03', category: 'Boarding Equipment', expense: 'Bedding Sets', quantity: '50 sets', amount: '$2500', date: '04/15/2026' },
-  { id: 'EX04', category: 'Library', expense: 'Books Acquisition', quantity: '200 books', amount: '$3000', date: '04/20/2026' },
-  { id: 'EX05', category: 'Sports', expense: 'Basketball Gear', quantity: '30 items', amount: '$1500', date: '04/12/2026' },
-  { id: 'EX06', category: 'IT Infrastructure', expense: 'Computers Upgrade', quantity: '10 pcs', amount: '$10000', date: '04/25/2026' },
-  { id: 'EX07', category: 'Transportation', expense: 'Bus Maintenance', quantity: '3 buses', amount: '$4500', date: '04/08/2026' },
-  { id: 'EX08', category: 'Cafeteria', expense: 'Kitchen Equipment Upgrade', quantity: '5 items', amount: '$5000', date: '04/18/2026' },
-  { id: 'EX09', category: 'Arts & Crafts', expense: 'Supplies Purchase', quantity: '100 kits', amount: '$1000', date: '04/22/2026' },
-  { id: 'EX10', category: 'Maintenance', expense: 'Painting School Building', quantity: '1 service', amount: '$7000', date: '04/28/2026' },
 ];
 
 // ---------- STUDENT DASHBOARD ----------

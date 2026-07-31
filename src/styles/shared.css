@@ -292,15 +292,6 @@
 .data-table tr.is-selected td {
   background: var(--purple-soft);
 }
-.table-pill {
-  display: inline-block;
-  background: var(--bg);
-  border-radius: 20px;
-  padding: 5px 12px;
-  font-size: 13px;
-  color: var(--text-soft);
-}
-
 .cell-person {
   display: flex;
   align-items: center;

@@ -7,14 +7,7 @@ const menu = [
   { icon: 'cap', label: 'Teachers', to: '/teachers' },
   { icon: 'users', label: 'Students', to: '/students' },
   { icon: 'grid', label: 'Attendance', to: '/attendance' },
-  {
-    icon: 'dollar',
-    label: 'Finance',
-    children: [
-      { label: 'Fees Collection', to: '/finance/fees' },
-      { label: 'School Expenses', to: '/finance/expenses' },
-    ],
-  },
+  { icon: 'dollar', label: 'Finance', disabled: true },
   { icon: 'notice', label: 'Notice', disabled: true },
   { icon: 'calendar', label: 'Calendar', disabled: true },
   { icon: 'book', label: 'Library', disabled: true },
@@ -28,28 +21,6 @@ const otherMenu = [
 
 export default function Sidebar() {
   const renderItem = (item) => {
-    if (item.children) {
-      return (
-        <div key={item.label} className="sidebar-group">
-          <div className="sidebar-item sidebar-item--label">
-            <Icon name={item.icon} />
-            <span>{item.label}</span>
-          </div>
-          <div className="sidebar-submenu">
-            {item.children.map((child) => (
-              <NavLink
-                key={child.to}
-                to={child.to}
-                className={({ isActive }) => `sidebar-subitem${isActive ? ' active' : ''}`}
-              >
-                {child.label}
-              </NavLink>
-            ))}
-          </div>
-        </div>
-      );
-    }
-
     if (item.disabled) {
       return (
         <div key={item.label} className="sidebar-item sidebar-item--disabled">

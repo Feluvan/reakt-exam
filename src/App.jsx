@@ -4,8 +4,6 @@ import AdminDashboard from './pages/AdminDashboard/AdminDashboard.jsx';
 import Teachers from './pages/Teachers/Teachers.jsx';
 import Students from './pages/Students/Students.jsx';
 import Attendance from './pages/Attendance/Attendance.jsx';
-import Finance from './pages/Finance/Finance.jsx';
-import SchoolExpenses from './pages/SchoolExpenses/SchoolExpenses.jsx';
 import StudentDashboard from './pages/StudentDashboard/StudentDashboard.jsx';
 import TeacherDashboard from './pages/TeacherDashboard/TeacherDashboard.jsx';
 import { users } from './data/mockData.js';
@@ -20,9 +18,6 @@ function App() {
           <Route path="teachers" element={<Teachers />} />
           <Route path="students" element={<Students />} />
           <Route path="attendance" element={<Attendance />} />
-          <Route path="finance" element={<Navigate to="/finance/fees" replace />} />
-          <Route path="finance/fees" element={<Finance />} />
-          <Route path="finance/expenses" element={<SchoolExpenses />} />
         </Route>
 
         <Route element={<Layout user={users.student} />}>

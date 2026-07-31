@@ -60,30 +60,6 @@
   background: transparent;
 }
 
-.sidebar-item--label {
-  cursor: default;
-  font-weight: 600;
-  color: var(--text);
-}
-.sidebar-item--label:hover {
-  background: transparent;
-}
-
-.sidebar-submenu {
-  display: flex;
-  flex-direction: column;
-  padding: 4px 0 4px 46px;
-}
-.sidebar-subitem {
-  padding: 8px 10px;
-  border-radius: 8px;
-  font-size: 13.5px;
-  color: var(--text-soft);
-}
-.sidebar-subitem:hover {
-  background: var(--bg);
-}
-
 .sidebar-promo {
   margin-top: auto;
   background: #dfe1e8;
