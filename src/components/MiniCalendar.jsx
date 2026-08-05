@@ -1,4 +1,3 @@
-import { useMemo, useState } from 'react';
 import Icon from './Icon.jsx';
 import './MiniCalendar.css';
 
@@ -23,32 +22,26 @@ function buildGrid(year, month) {
   return cells;
 }
 
-export default function MiniCalendar({ agenda }) {
-  const today = useMemo(() => new Date(), []);
-  const [view, setView] = useState({ year: today.getFullYear(), month: today.getMonth() });
+const today = new Date();
+const cells = buildGrid(today.getFullYear(), today.getMonth());
 
-  const cells = useMemo(() => buildGrid(view.year, view.month), [view]);
-
-  const changeMonth = (delta) => {
-    setView((v) => {
-      const d = new Date(v.year, v.month + delta, 1);
-      return { year: d.getFullYear(), month: d.getMonth() };
-    });
-  };
-
-  const isToday = (date) =>
+function isToday(date) {
+  return (
     date.getFullYear() === today.getFullYear() &&
     date.getMonth() === today.getMonth() &&
-    date.getDate() === today.getDate();
+    date.getDate() === today.getDate()
+  );
+}
 
+export default function MiniCalendar({ agenda }) {
   return (
     <div className="card mini-calendar">
       <div className="calendar-header">
-        <button type="button" className="icon-btn icon-btn--ghost" onClick={() => changeMonth(-1)}>
+        <button type="button" className="icon-btn icon-btn--ghost" disabled>
           <Icon name="chevronLeft" size={16} />
         </button>
-        <h3>{MONTHS[view.month]} {view.year}</h3>
-        <button type="button" className="icon-btn icon-btn--ghost" onClick={() => changeMonth(1)}>
+        <h3>{MONTHS[today.getMonth()]} {today.getFullYear()}</h3>
+        <button type="button" className="icon-btn icon-btn--ghost" disabled>
           <Icon name="chevronRight" size={16} />
         </button>
       </div>
