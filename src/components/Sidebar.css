@@ -1,9 +1,9 @@
 .sidebar {
-  width: 240px;
+  width: 220px;
   flex-shrink: 0;
-  background: var(--card);
-  border-right: 1px solid var(--border);
-  padding: 24px 16px;
+  background: #ffffff;
+  border-right: 1px solid #cccccc;
+  padding: 20px 14px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -13,10 +13,10 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 19px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: bold;
   padding: 0 8px;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 .sidebar-logo-mark {
   display: flex;
@@ -25,35 +25,42 @@
 
 .sidebar-section-label {
   font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: var(--text-faint);
-  padding: 0 12px;
-  margin: 14px 0 8px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #777777;
+  padding: 0 10px;
+  margin: 12px 0 6px;
 }
 
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 4px;
 }
 
 .sidebar-item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 10px 12px;
-  border-radius: 10px;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 4px;
   font-size: 14px;
-  color: var(--text-soft);
+  color: #333333;
+  border: 1px solid transparent;
 }
 
 .sidebar-item:hover {
-  background: var(--bg);
+  background: #eeeeee;
+}
+
+.sidebar-item.active {
+  background: #e2e3e5;
+  font-weight: bold;
+  border: 1px solid #cccccc;
 }
 
 .sidebar-item--disabled {
-  color: var(--text-faint);
+  color: #999999;
   cursor: default;
 }
 .sidebar-item--disabled:hover {
@@ -62,30 +69,24 @@
 
 .sidebar-promo {
   margin-top: auto;
-  background: #dfe1e8;
-  border-radius: var(--radius);
-  padding: 18px;
+  background: #f0f0f0;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 14px;
   text-align: left;
 }
 .sidebar-promo p {
   font-size: 13px;
-  font-weight: 600;
-  color: #40424c;
-  margin: 0 0 14px;
+  font-weight: normal;
+  color: #333333;
+  margin: 0 0 10px;
 }
 .sidebar-promo button {
   width: 100%;
-  border: none;
-  background: #1f2130;
-  color: #fff;
-  border-radius: 20px;
-  padding: 10px;
+  border: 1px solid #555;
+  background: #555555;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 8px;
   font-size: 13px;
-  font-weight: 600;
-}
-
-@media (max-width: 1100px) {
-  .sidebar {
-    display: none;
-  }
 }

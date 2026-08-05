@@ -1,18 +1,19 @@
 .teacher-banner {
-  background: #3a3d4d;
-  color: #fff;
+  background: #444444;
+  color: #ffffff;
+  border-radius: 4px;
 }
 .teacher-banner h2 {
   margin: 0 0 14px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: bold;
   max-width: 560px;
 }
 .teacher-banner-meta {
   display: flex;
   gap: 24px;
   font-size: 13px;
-  color: #d7d8de;
+  color: #dddddd;
   flex-wrap: wrap;
 }
 
@@ -43,7 +44,7 @@
   justify-content: space-between;
   gap: 12px;
   padding: 12px 0;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid #cccccc;
 }
 .task-item:last-child {
   border-bottom: none;
@@ -53,26 +54,20 @@
   align-items: center;
   gap: 10px;
   font-size: 13.5px;
-  color: var(--text);
+  color: #222222;
 }
 .task-done {
   text-decoration: line-through;
-  color: var(--text-faint);
+  color: #888888;
 }
 .task-actions {
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--text-faint);
+  color: #777777;
   flex-shrink: 0;
 }
 .task-date {
   font-size: 12px;
   white-space: nowrap;
-}
-
-@media (max-width: 1200px) {
-  .teacher-stats-row {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }

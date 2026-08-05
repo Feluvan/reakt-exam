@@ -7,11 +7,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 .calendar-header h3 {
   margin: 0;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .calendar-weekdays,
@@ -23,64 +23,66 @@
 
 .calendar-weekdays span {
   font-size: 12px;
-  color: var(--text-faint);
-  padding-bottom: 8px;
+  color: #777777;
+  padding-bottom: 6px;
+  font-weight: bold;
 }
 
 .calendar-cell {
   font-size: 13px;
-  color: var(--text);
-  padding: 7px 0;
-  border-radius: 8px;
+  color: #222222;
+  padding: 6px 0;
+  border-radius: 4px;
 }
 
 .calendar-cell.is-muted {
-  color: var(--text-faint);
-  opacity: 0.5;
+  color: #aaaaaa;
 }
 
 .calendar-cell.is-today {
-  background: var(--blue-soft);
-  color: var(--blue-deep);
-  font-weight: 700;
+  background: #0d6efd;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .agenda-header {
-  margin-top: 22px;
+  margin-top: 18px;
 }
 
 .agenda-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .agenda-item {
   display: flex;
   flex-direction: column;
-  gap: 3px;
-  border-radius: 10px;
-  padding: 12px 14px;
+  gap: 2px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  padding: 10px 12px;
+  background: #ffffff;
 }
 .agenda-item--purple {
-  background: var(--purple-soft);
+  background: #f8f9fa;
 }
 .agenda-item--yellow {
-  background: var(--yellow-soft);
+  background: #fff3cd;
 }
 .agenda-item--blue {
-  background: var(--blue-soft);
+  background: #e2e3e5;
 }
 .agenda-time {
   font-size: 12px;
-  color: var(--text-soft);
+  color: #555555;
 }
 .agenda-tag {
-  font-size: 12px;
-  color: var(--text-faint);
+  font-size: 11px;
+  color: #777777;
 }
 .agenda-title {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text);
+  font-size: 13px;
+  font-weight: bold;
+  color: #222222;
 }

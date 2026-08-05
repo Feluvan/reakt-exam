@@ -34,17 +34,11 @@
 
 .topbar-user-name {
   font-size: 14px;
-  font-weight: 700;
-  color: var(--text);
+  font-weight: bold;
+  color: #222222;
 }
 
 .topbar-user-role {
   font-size: 12px;
-  color: var(--text-faint);
-}
-
-@media (max-width: 640px) {
-  .topbar-user-text {
-    display: none;
-  }
+  color: #777777;
 }

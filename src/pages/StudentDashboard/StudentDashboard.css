@@ -6,19 +6,20 @@
 
 .welcome-card {
   flex: 1.4;
-  background: var(--blue-soft);
+  background: #f0f0f0;
+  border: 1px solid #cccccc;
   display: flex;
   align-items: center;
 }
 
 .welcome-text h2 {
   margin: 0 0 8px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .welcome-text p {
   margin: 0 0 14px;
-  color: var(--text-soft);
+  color: #555555;
   font-size: 13.5px;
   max-width: 480px;
 }
@@ -27,7 +28,7 @@
   display: flex;
   gap: 20px;
   font-size: 13px;
-  color: var(--text-soft);
+  color: #555555;
   flex-wrap: wrap;
 }
 
@@ -39,26 +40,28 @@
 }
 
 .mini-stat {
-  border-radius: var(--radius);
+  border-radius: 4px;
+  border: 1px solid #cccccc;
   padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 4px;
+  background: #ffffff;
 }
 .mini-stat--blue {
-  background: var(--blue-soft);
+  background: #f4f4f4;
 }
 .mini-stat--purple {
-  background: var(--purple-soft);
+  background: #f4f4f4;
 }
 .mini-stat--yellow {
-  background: var(--yellow-soft);
+  background: #fff3cd;
 }
 .mini-stat--pink {
-  background: #fbe3ee;
+  background: #f8d7da;
 }
 .mini-stat-emoji {
-  color: var(--text);
+  color: #333333;
   margin-bottom: 4px;
 }
 
@@ -76,32 +79,26 @@
   align-items: center;
 }
 .performance-value strong {
-  font-size: 26px;
-  color: var(--text);
+  font-size: 24px;
+  color: #222222;
 }
 .performance-value span {
   font-size: 12px;
-  color: var(--text-faint);
+  color: #777777;
 }
 .performance-label {
   margin-top: 16px;
   font-size: 13px;
-  color: var(--text-soft);
+  color: #555555;
 }
 
 .recent-group-label {
   font-size: 11px;
-  font-weight: 700;
-  color: var(--text-faint);
+  font-weight: bold;
+  color: #777777;
   letter-spacing: 0.05em;
   margin: 14px 0 10px;
 }
 .recent-group-label:first-child {
   margin-top: 0;
-}
-
-@media (max-width: 900px) {
-  .welcome-row {
-    flex-direction: column;
-  }
 }

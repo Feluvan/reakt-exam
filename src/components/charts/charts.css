@@ -12,27 +12,27 @@
   align-items: center;
 }
 .donut-value {
-  font-size: 26px;
-  font-weight: 700;
-  color: var(--text);
+  font-size: 22px;
+  font-weight: bold;
+  color: #222222;
 }
 .donut-label {
-  font-size: 13px;
-  color: var(--text-faint);
+  font-size: 12px;
+  color: #777777;
 }
 
 /* Grouped bar chart */
 .bars-chart {
   display: flex;
-  gap: 12px;
+  gap: 10px;
 }
 .bars-y-axis {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 12px;
-  color: var(--text-faint);
-  padding-bottom: 26px;
+  font-size: 11px;
+  color: #777777;
+  padding-bottom: 24px;
 }
 .bars-plot {
   position: relative;
@@ -41,13 +41,13 @@
 .bars-grid {
   position: absolute;
   inset: 0;
-  bottom: 26px;
+  bottom: 24px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
 }
 .bars-gridline {
-  border-top: 1px dashed var(--border);
+  border-top: 1px solid #eeeeee;
   height: 0;
 }
 .bars-columns {
@@ -71,29 +71,29 @@
   gap: 4px;
   width: 100%;
   justify-content: center;
-  padding-bottom: 26px;
+  padding-bottom: 24px;
 }
 .bars-bar {
   width: 10px;
-  border-radius: 5px 5px 0 0;
+  border-radius: 2px 2px 0 0;
   min-height: 2px;
 }
 .bars-cat-label {
   position: absolute;
   bottom: 0;
-  font-size: 12px;
-  color: var(--text-faint);
+  font-size: 11px;
+  color: #777777;
 }
 .bars-tooltip {
   position: absolute;
   top: -14px;
   left: 50%;
   transform: translate(-50%, -100%);
-  background: #fff;
-  border-radius: var(--radius-sm);
-  box-shadow: var(--shadow-card);
-  padding: 8px 12px;
-  font-size: 12px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 11px;
   white-space: nowrap;
   z-index: 2;
 }
@@ -101,14 +101,14 @@
 /* Area / line chart */
 .area-chart {
   display: flex;
-  gap: 12px;
+  gap: 10px;
 }
 .area-y-axis {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 12px;
-  color: var(--text-faint);
+  font-size: 11px;
+  color: #777777;
   padding-bottom: 24px;
 }
 .area-plot {
@@ -123,15 +123,14 @@
   overflow: visible;
 }
 .area-gridline {
-  stroke: var(--border);
-  stroke-dasharray: 6 6;
+  stroke: #eeeeee;
 }
 .area-x-axis {
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
-  color: var(--text-faint);
-  padding-top: 8px;
+  font-size: 11px;
+  color: #777777;
+  padding-top: 6px;
 }
 .area-tooltip {
   position: absolute;
@@ -145,17 +144,17 @@
   top: 0;
   bottom: 0;
   width: 1px;
-  background: var(--border);
+  background: #cccccc;
 }
 .area-tooltip-box {
   position: absolute;
   top: 6px;
   left: 12px;
-  background: #fff;
-  border-radius: var(--radius-sm);
-  box-shadow: var(--shadow-card);
-  padding: 8px 12px;
-  font-size: 12px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 11px;
   white-space: nowrap;
 }
 
@@ -163,35 +162,36 @@
 .hbar-list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
 }
 .hbar-row {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
 }
 .hbar-label {
-  width: 84px;
+  width: 80px;
   flex-shrink: 0;
-  font-size: 13px;
-  color: var(--text-soft);
+  font-size: 12px;
+  color: #555555;
 }
 .hbar-track {
   flex: 1;
-  height: 20px;
-  background: var(--bg);
-  border-radius: 6px;
+  height: 16px;
+  background: #eeeeee;
+  border-radius: 2px;
   overflow: hidden;
+  border: 1px solid #dddddd;
 }
 .hbar-fill {
   height: 100%;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 .hbar-axis {
   display: flex;
   justify-content: space-between;
   font-size: 11px;
-  color: var(--text-faint);
-  padding-left: 98px;
+  color: #777777;
+  padding-left: 90px;
   margin-top: 4px;
 }
