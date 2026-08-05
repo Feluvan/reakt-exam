@@ -2,10 +2,9 @@ import { Outlet } from 'react-router-dom';
 import Sidebar from './Sidebar.jsx';
 import Topbar from './Topbar.jsx';
 import Icon from './Icon.jsx';
-import { users } from '../data/mockData.js';
 import './Layout.css';
 
-export default function Layout({ user = users.admin }) {
+export default function Layout({ user = { name: 'Linda Adora', role: 'Admin' } }) {
   return (
     <div className="app-layout">
       <Sidebar />

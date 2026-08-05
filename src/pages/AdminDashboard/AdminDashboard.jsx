@@ -5,20 +5,69 @@ import GroupedBarChart from '../../components/charts/GroupedBarChart.jsx';
 import AreaLineChart from '../../components/charts/AreaLineChart.jsx';
 import MiniCalendar from '../../components/MiniCalendar.jsx';
 import MessagesCard from '../../components/MessagesCard.jsx';
-import {
-  adminStats,
-  genderSplit,
-  attendanceWeekly,
-  earnings,
-  olympicStudents,
-  competitionStats,
-  agendaAdmin,
-  messagesAdmin,
-  studentActivity,
-  noticeBoard,
-  recentActivityAdmin,
-} from '../../data/mockData.js';
 import './AdminDashboard.css';
+
+const adminStats = [
+  { label: 'Students', value: '2,684', trend: 'up', trendValue: '15%', color: 'purple' },
+  { label: 'Teachers', value: '187', trend: 'down', trendValue: '3%', color: 'yellow' },
+  { label: 'Staffs', value: '96', trend: 'down', trendValue: '3%', color: 'purple' },
+  { label: 'Awards', value: '128', trend: 'up', trendValue: '5%', color: 'yellow' },
+];
+
+const genderSplit = [
+  { label: 'Boys', value: 1262, percent: 47, color: 'var(--blue)' },
+  { label: 'Girls', value: 1422, percent: 53, color: 'var(--yellow)' },
+];
+
+const attendanceWeekly = {
+  categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+  series: [
+    { name: 'Total Present', color: 'var(--yellow)', data: [78, 82, 92, 55, 60] },
+    { name: 'Total Absent', color: 'var(--blue)', data: [60, 70, 40, 78, 88] },
+  ],
+  highlight: { index: 2, label: '95%', sub: 'Present' },
+};
+
+const earnings = {
+  months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+  income: [420, 650, 480, 700, 520, 610, 540, 690, 837, 600, 720, 900],
+  expense: [300, 420, 350, 480, 380, 430, 400, 460, 500, 420, 470, 430],
+  highlight: { index: 8, date: 'Sep 14', income: '$837,000', expense: '$500,000' },
+};
+
+const olympicStudents = { value: '1,240', label: 'Olympic Students', trend: 'up', trendValue: '15%' };
+const competitionStats = { value: '86', label: 'Competitions', trend: 'down', trendValue: '8%' };
+
+const agendaAdmin = [
+  { time: '08:00 am', tag: 'All Grade', title: 'Homeroom & Announcement', color: 'purple' },
+  { time: '10:00 am', tag: 'Grade 3-5', title: 'Math Review & Practice', color: 'yellow' },
+  { time: '10:30 am', tag: 'Grade 6-8', title: 'Science Experiment & Discussion', color: 'blue' },
+];
+
+const messagesAdmin = [
+  { name: 'Dr. Lila Ramirez', time: '9:00 AM', text: 'Please ensure the monthly attendance report is accurate before the deadline.' },
+  { name: 'Ms. Heather Morris', time: '10:15 AM', text: "Don't forget the staff training on digital tools scheduled for Friday at 3 PM." },
+  { name: 'Mr. Carl Jenkins', time: '2:00 PM', text: 'Budget review meeting for the next fiscal year is on Thursday at 10 AM.' },
+];
+
+const studentActivity = [
+  { icon: 'ribbon', title: 'Regional Robotics Champion', text: 'Winning robots triumph in engineering challenge', time: '2 days ago' },
+  { icon: 'ribbon', title: 'Won Regional Debate Competition', text: "Debate team's compelling arguments reach national stage", time: '10 hours ago' },
+  { icon: 'ribbon', title: '2nd Place at Science State Fair', text: 'Science Club claims silver at science showcase', time: '3 weeks ago' },
+];
+
+const noticeBoard = [
+  { title: 'Math Olympiad Competition', date: '04/18/2026', by: 'Ms. Jackson (Math Teacher)', views: '325' },
+  { title: 'Yearbook Photo Submissions Wanted', date: '04/15/2026', by: 'Yearbook Committee', views: '587' },
+  { title: 'Reminder: School Play Auditions This Week', date: '04/12/2026', by: 'Mr. Rodriguez (Drama Teacher)', views: '1.2K' },
+  { title: 'Lost and Found Overflowing!', date: '04/10/2026', by: 'School Administration', views: '492' },
+];
+
+const recentActivityAdmin = [
+  { name: 'Ms. Johnson', text: 'assigned new English Literature homework', time: '20 minutes ago' },
+  { name: 'David Lee', text: 'already submitted quiz in History', time: '1 hour ago' },
+  { name: 'Permission Slip Reminder', text: 'Science Museum Field Trip', time: '3 hours ago' },
+];
 
 export default function AdminDashboard() {
   return (

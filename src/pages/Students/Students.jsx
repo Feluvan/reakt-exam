@@ -2,8 +2,20 @@ import { useState } from 'react';
 import Icon from '../../components/Icon.jsx';
 import Avatar from '../../components/Avatar.jsx';
 import Pagination from '../../components/Pagination.jsx';
-import { studentsList } from '../../data/mockData.js';
 import '../../styles/list-page.css';
+
+const studentsList = [
+  { name: 'Sarah Miller', email: 'smiller@schoolhub.edu', id: '2016-01-001', class: '10A', dob: '04/18/2008', phone: '(555) 101-0101', address: '101 High St, Springfield, IL' },
+  { name: 'Ethan Brown', email: 'ebrown@schoolhub.edu', id: '2014-02-002', class: '12', dob: '07/22/2006', phone: '(555) 101-0102', address: '202 Lake Ave, Springfield, IL' },
+  { name: 'Olivia Smith', email: 'osmith@schoolhub.edu', id: '2017-03-003', class: '9B', dob: '09/29/2010', phone: '(555) 101-0103', address: '303 River Rd, Springfield, IL' },
+  { name: 'Lucas Johnson', email: 'ljohnson@schoolhub.edu', id: '2015-01-004', class: '11A', dob: '11/03/2009', phone: '(555) 101-0104', address: '404 Pine Dr, Springfield, IL' },
+  { name: 'Mia Williams', email: 'mwilliams@schoolhub.edu', id: '2018-02-005', class: '8B', dob: '01/19/2007', phone: '(555) 101-0105', address: '505 Maple Ln, Springfield, IL' },
+  { name: 'Noah Davis', email: 'ndavis@schoolhub.edu', id: '2015-03-006', class: '9C', dob: '05/05/2010', phone: '(555) 101-0106', address: '606 Birch Blvd, Springfield, IL' },
+  { name: 'Emma Wilson', email: 'ewilson@schoolhub.edu', id: '2019-01-007', class: '7C', dob: '02/20/2007', phone: '(555) 101-0107', address: '707 Cedar Ct, Springfield, IL' },
+  { name: 'Liam Thompson', email: 'lthomps@schoolhub.edu', id: '2017-02-008', class: '10B', dob: '08/28/2011', phone: '(555) 101-0108', address: '808 Walnut St, Springfield, IL' },
+  { name: 'Ava Garcia', email: 'agarcia@schoolhub.edu', id: '2016-03-009', class: '11A', dob: '03/15/2009', phone: '(555) 101-0109', address: '909 Spruce Way, Springfield, IL' },
+  { name: 'James Martinez', email: 'jmartinez@schoolhub.edu', id: '2018-01-010', class: '7B', dob: '12/12/2008', phone: '(555) 101-0110', address: '1010 Fir St, Springfield, IL' },
+];
 
 export default function Students() {
   const [selected, setSelected] = useState([]);

@@ -6,7 +6,6 @@ import Students from './pages/Students/Students.jsx';
 import Attendance from './pages/Attendance/Attendance.jsx';
 import StudentDashboard from './pages/StudentDashboard/StudentDashboard.jsx';
 import TeacherDashboard from './pages/TeacherDashboard/TeacherDashboard.jsx';
-import { users } from './data/mockData.js';
 
 function App() {
   return (
@@ -20,11 +19,11 @@ function App() {
           <Route path="attendance" element={<Attendance />} />
         </Route>
 
-        <Route element={<Layout user={users.student} />}>
+        <Route element={<Layout user={{ name: 'Mia Williams', role: 'Student' }} />}>
           <Route path="student-dashboard" element={<StudentDashboard />} />
         </Route>
 
-        <Route element={<Layout user={users.teacher} />}>
+        <Route element={<Layout user={{ name: 'Heather Morris', role: 'Teacher' }} />}>
           <Route path="teacher-dashboard" element={<TeacherDashboard />} />
         </Route>
 

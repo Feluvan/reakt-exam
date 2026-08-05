@@ -5,22 +5,68 @@ import GaugeChart from '../../components/charts/GaugeChart.jsx';
 import AreaLineChart from '../../components/charts/AreaLineChart.jsx';
 import HorizontalBarList from '../../components/charts/HorizontalBarList.jsx';
 import StatusBadge from '../../components/StatusBadge.jsx';
-import {
-  users,
-  studentStats,
-  studentPerformance,
-  scoreActivity,
-  gradeBySubject,
-  assignments,
-  agendaStudent,
-  messagesStudent,
-  recentActivityStudent,
-} from '../../data/mockData.js';
 import './StudentDashboard.css';
 
-export default function StudentDashboard() {
-  const student = users.student;
+const student = { name: 'Mia Williams', role: 'Student' };
 
+const studentStats = [
+  { icon: 'grid', value: '97%', label: 'Attendance', color: 'blue' },
+  { icon: 'notice', value: '258+', label: 'Task Completed', color: 'purple' },
+  { icon: 'edit', value: '12', label: 'Task in Progress', color: 'yellow' },
+  { icon: 'ribbon', value: '245', label: 'Reward Points', color: 'pink' },
+];
+
+const studentPerformance = { gpa: 3.4, max: 4.0, percent: 85, label: '1st Semester – 6th Semester' };
+
+const scoreActivity = {
+  categories: ['Apr 10', 'Apr 11', 'Apr 12', 'Apr 13', 'Apr 14', 'Apr 15', 'Apr 16'],
+  data: [55, 78, 48, 62, 70, 58, 92],
+  highlight: { index: 4, value: '70%' },
+};
+
+const gradeBySubject = [
+  { subject: 'Biology', value: 78 },
+  { subject: 'Chemistry', value: 92 },
+  { subject: 'Geography', value: 68 },
+  { subject: 'History', value: 85 },
+  { subject: 'Literature', value: 80 },
+  { subject: 'Art', value: 94 },
+];
+
+const assignments = [
+  { no: '01', task: 'Read Chapters 1-3', subject: 'English Literature', due: 'May 1, 2026', time: '09:00 AM', status: 'In Progress' },
+  { no: '02', task: 'Complete Problem Set #5', subject: 'Mathematics', due: 'May 3, 2026', time: '10:30 AM', status: 'Not Started' },
+  { no: '03', task: 'Write Lab Report on Acid-Base Titration', subject: 'Chemistry', due: 'May 5, 2026', time: '11:12 AM', status: 'In Progress' },
+  { no: '04', task: 'Prepare for Oral Presentation', subject: 'History', due: 'May 2, 2026', time: '12:00 PM', status: 'Not Started' },
+  { no: '05', task: 'Create Art Piece for Final Project', subject: 'Art', due: 'May 6, 2026', time: '03:00 PM', status: 'In Progress' },
+];
+
+const agendaStudent = [
+  { time: '08:00 am', tag: 'Mathematics', title: 'Homeroom & Announcement', color: 'purple' },
+  { time: '10:30 am', tag: 'Science', title: 'Science Fair Preparation', color: 'yellow' },
+  { time: '01:00 pm', tag: 'History', title: 'History Documentary Viewing', color: 'blue' },
+];
+
+const messagesStudent = [
+  { name: 'Ms. Carter', time: '4:15 PM', text: "Don't forget, tomorrow's lab report on titration is due by 9 AM." },
+  { name: 'Jake', time: '12:30 PM', text: 'Hey, are we still meeting up after school to study for the math test?' },
+  { name: 'Coach Simmons', time: '2:00 PM', text: 'Practice is moved to 5 PM today because of the assembly.' },
+];
+
+const recentActivityStudent = [
+  { group: 'Today', items: [
+    { icon: 'calendar', title: 'Reminder: Attending Physics Group Meeting.', time: '1:00 PM' },
+    { icon: 'calendar', title: 'Reminder: Art Supplies Collection.', time: '10:30 AM' },
+    { icon: 'ribbon', title: 'You got Award for 1st place student', time: '10:30 AM' },
+  ]},
+  { group: 'Yesterday', items: [
+    { icon: 'notice', title: 'Biology with Ms. Carter Quiz Scheduled', time: '4:00 PM' },
+    { icon: 'chat', title: 'Received Feedback on English Essay.', time: '9:15 AM' },
+    { icon: 'edit', title: 'Submitted Mathematics Assignment.', time: '2:45 PM' },
+  ]},
+];
+
+export default function StudentDashboard() {
   return (
     <div className="student-dashboard">
       <div className="dashboard-top">
