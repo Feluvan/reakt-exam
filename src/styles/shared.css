@@ -103,6 +103,15 @@
   border-radius: 2px;
   flex-shrink: 0;
 }
+.legend-dot--blue {
+  background: var(--blue);
+}
+.legend-dot--yellow {
+  background: var(--yellow);
+}
+.legend-dot--purple {
+  background: var(--purple);
+}
 
 /* Donut with side legend */
 .students-donut-wrap {
